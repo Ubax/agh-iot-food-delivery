@@ -4,7 +4,7 @@ import rsa
 import base64
 import time
 import json
-from keyLoader import loadPrivate, loadPublic
+from keyLoader import loadPrivate
 import requests
 
 DELTA = os.getenv("DELTA", 10)

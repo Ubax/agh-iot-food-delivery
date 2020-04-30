@@ -12,9 +12,12 @@ class RFDISensor:
     def __init__(self, dronePrivateKey: str):
         self.dronePrivateKey = dronePrivateKey
 
-    def orderPlaced(self, orderId, onDone):
-        # time.sleep(random.uniform(1, 3))
+    def setOrderId(self, orderId):
         self.orderId = orderId
+
+    def orderPlaced(self, orderId, onDone):
+        time.sleep(random.uniform(3, 6))
+        self.setOrderId(orderId)
         onDone()
 
     def read(self) -> str:
