@@ -1,0 +1,14 @@
+{
+  "name": "peer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "peer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "flowchain-ledger": "0.3.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
